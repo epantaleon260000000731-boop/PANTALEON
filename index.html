@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eugene B. Pantaleon | E-Portfolio</title>
+  <meta name="description" content="E-portfolio of Eugene B. Pantaleon, a first-year Information Technology student at the University of the Immaculate Conception.">
+  <meta name="theme-color" content="#0066cc">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Connection 1: External CSS Link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Connection 2: External JavaScript Link -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div id="progress" aria-hidden="true"></div>
+
+  <header>
+    <nav aria-label="Main">
+      <a href="#hero" class="brand">EP<span>.</span></a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Dynamic Target 1: Dark Mode Toggle -->
+      <button id="theme-btn" type="button" aria-pressed="false">Dark mode</button>
+      <button id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">☰</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Eugene B. <span class="mark">Pantaleon</span></h1>
+        <p class="lead">1st Year Information Technology Student at the University of the Immaculate Conception.</p>
+        <p class="learning">Currently learning <strong id="rotator">HTML</strong></p>
+        <div class="actions">
+          <a href="#projects" class="btn">See my projects</a>
+          <a href="#contact" class="btn ghost">Contact me</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="frame"><img src="profile.png" alt="Portrait of Eugene B. Pantaleon" width="420" height="500"></div>
+        <div class="badge"><strong>BSIT</strong><span>Year 1</span></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <div>
+          <p>I enjoy learning new things and finding out how technology can solve problems. I'm building my programming skills and creativity as I progress through my studies.</p>
+          <p>This portfolio is one of my first projects. It brings together HTML for structure, CSS for design, and JavaScript for interaction.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>School</dt><dd>University of the Immaculate Conception</dd></div>
+          <div><dt>Program</dt><dd>Information Technology</dd></div>
+          <div><dt>Year level</dt><dd>1st Year</dd></div>
+          <div><dt>Focus</dt><dd>Web development basics</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills I'm building</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="icon" aria-hidden="true">&lt;/&gt;</div>
+          <h3>Web</h3>
+          <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">⌘</div>
+          <h3>Tools</h3>
+          <ul class="chips"><li>VS Code</li><li>Browser DevTools</li></ul>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">↗</div>
+          <h3>Personal</h3>
+          <ul class="chips"><li>Problem solving</li><li>Teamwork</li><li>Curiosity</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="journey">
+      <h2>My journey</h2>
+      <ol class="timeline">
+        <li>
+          <h3>Started Information Technology</h3>
+          <p>University of the Immaculate Conception. Learning programming and computing fundamentals.</p>
+        </li>
+        <li>
+          <h3>Learned to build for the web</h3>
+          <p>Linked HTML, CSS, and JavaScript together in my first web projects.</p>
+        </li>
+        <li>
+          <h3>Built this portfolio</h3>
+          <p>Added dark mode, a responsive layout, and interactive sections.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projects">
+      <h2>Featured projects</h2>
+      <div class="cards">
+        <article class="card project">
+          <h3>Web Integration Lab</h3>
+          <p>A demonstration of linking HTML, CSS, and JS.</p>
+          <p class="meta">HTML · CSS · JavaScript</p>
+        </article>
+        <article class="card project">
+          <h3>Personal Portfolio</h3>
+          <p>A responsive portfolio with dark mode, a mobile menu, and a contact section.</p>
+          <p class="meta">HTML · CSS · JavaScript</p>
+        </article>
+        <article class="card project">
+          <h3>Your next project</h3>
+          <p>Add your newest class project here, with a short description of what it does.</p>
+          <p class="meta">Coming soon</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-box">
+        <h2>Let's connect</h2>
+        <p>Want to work together or just say hello?</p>
+        <!-- Dynamic Target 2: Interactive Button -->
+        <button id="contact-btn" type="button" aria-expanded="false" aria-controls="contact-details">Get in touch</button>
+
+        <div id="contact-details" hidden>
+          <a href="tel:+639923761854" class="detail"><small>Phone</small><strong>0992 376 1854</strong></a>
+          <div class="detail"><small>University</small><strong>University of the Immaculate Conception</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Dynamic Target 3: Year Injection -->
+    <p>&copy; <span id="year">2026</span> Eugene B. Pantaleon. All rights reserved.</p>
+    <a href="#hero">Back to top ↑</a>
+  </footer>
+</body>
+</html>
